@@ -1,0 +1,19 @@
+<%- include('partials/header') %> 
+
+<form class="form-signin" action="/signup" method="POST">
+    <img class="mb-4" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Sign Up</h1>
+    <label for="inputUsername" class="sr-only">Username</label>
+    <input type="text" id="inputUsername" class="form-control" placeholder="Username" name="username" autocomplete="off" required autofocus>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required>
+    <div class="checkbox mb-3">
+        <label>
+        <a href="/login">or Login</a>
+        </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+    <p class="mt-5 mb-3 text-muted copyright">&copy; Yixuan Li, 2020</p>
+</form>
+
+<%- include('partials/footer') %> 
